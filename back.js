@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setStatus("Connecting...", false);
 
-    const socket = new WebSocket("ws://10.182.40.145:12345");
+    const socket = new WebSocket("ws://127.0.0.1:12345");
 
     socket.onopen = function () {
         setStatus("Connected", true);
